@@ -1,0 +1,98 @@
+/* Lista principal */
+.contenedor-lista {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.titulo {
+  color: #6C5CE7;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(90deg, #6C5CE7, transparent) 1;
+}
+
+/* Items de tareas */
+.item-tarea {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.item-tarea:hover {
+  transform: translateX(10px);
+  border-color: #6C5CE7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox */
+.check-tarea {
+  width: 24px;
+  height: 24px;
+  margin-right: 1.2rem;
+  accent-color: #6C5CE7;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.check-tarea:hover {
+  transform: scale(1.1);
+}
+
+/* Estado seleccionado */
+.seleccionada {
+  background: rgba(108, 92, 231, 0.05);
+  border-color: #6C5CE7;
+}
+
+/* Formulario */
+.contenedor-form {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(108, 92, 231, 0.1);
+}
+
+.grupo-botones {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.campo-texto {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.campo-texto:focus {
+  border-color: #6C5CE7;
+  box-shadow: 0 0 0 4px rgba(108, 92, 231, 0.1);
+}
+
+.boton-add {
+  background: #6C5CE7;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.boton-add:hover {
+  background: #5b4ac9;
+}
